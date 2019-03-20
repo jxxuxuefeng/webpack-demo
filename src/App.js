@@ -8,10 +8,11 @@ class App extends Component {
   }
   
   render() {
+    console.log(_.join([1,2,3444,4],'***'))
     return (
       <div>
         <input />
-        <input value="test HMR" />
+        <input value="test HMR33" />
         <button>按钮</button>
       </div>
     );

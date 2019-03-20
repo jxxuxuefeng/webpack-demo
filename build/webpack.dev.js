@@ -1,6 +1,8 @@
 // node路径模块
 const path = require("path");
+// 合并配置插件
 const merge = require("webpack-merge");
+// 通用配置
 const common = require("./webpack.common.js");
 // webpack
 const webpack = require("webpack");
