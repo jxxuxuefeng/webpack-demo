@@ -6,23 +6,20 @@ const Option = Select.Option;
 class App extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      inputValue: ""
+    };
+  }
+
+  onChangeInputValue = (e) =>{
+    console.log(e)
   }
 
   render() {
-    console.log(_.join([1, 2, 3444, 4], "***"));
+    const { inputValue } = this.state;
     return (
       <div>
-        <Select defaultValue="lucy" style={{ width: 120 }}>
-          <Option value="jack">Jack</Option>
-          <Option value="lucy">Lucy</Option>
-          <Option value="disabled" disabled>
-            Disabled
-          </Option>
-          <Option value="Yiminghe">yiminghe</Option>
-        </Select>
-        <DatePicker />
-        <Input />
-        <input value="test HMR" />
+        <input value={inputValue} onChange={this.onChangeInputValue} />
         <button>按钮33</button>
       </div>
     );

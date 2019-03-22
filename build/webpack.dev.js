@@ -19,7 +19,7 @@ module.exports = merge(common, {
     // 端口
     port: 8888,
     // 新开页面
-    open: true,
+    open: false,
     // 热更新
     hot: true,
     // 在没有页面刷新的情况下启用热模块替换作为构建失败时的后备
